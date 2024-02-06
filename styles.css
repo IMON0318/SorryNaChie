@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Set min-height instead of height for responsiveness */
+    background-color: #F8C8DC;
+}
+
+#noButton {
+    position: absolute;
+    right: 10%; /* Use percentages for positioning */
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: absolute;
+    left: 10%; /* Use percentages for positioning */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Change to column for responsiveness */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0; /* Adjust margin for responsiveness */
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: row; /* Change back to row for smaller screens */
+    }
+}
